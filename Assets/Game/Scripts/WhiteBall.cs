@@ -6,20 +6,21 @@ namespace Game.Scripts
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private float _ballSpeed;
+        [SerializeField] private float _minBallSpeed;
 
         public bool isMoving;
 
         private void Update()
         {
             _ballSpeed = _rigidbody.velocity.magnitude;
-            if (_ballSpeed > 0)
+            if (_ballSpeed > _minBallSpeed)
             {
                 isMoving = true;
             }
             else
             {
                 isMoving = false;
-                
+                _rigidbody.velocity = Vector3.zero;
             }
         }
     }

@@ -346,6 +346,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Game/Scripts/Cue.cs"
+"Assets/Game/Scripts/Hole.cs"
 "Assets/Game/Scripts/WhiteBall.cs"
 -langversion:9.0
 

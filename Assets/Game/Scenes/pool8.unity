@@ -196,6 +196,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5666865752228007100, guid: acc0b4c2614332d45a049a1a84b774f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     - target: {fileID: 8167622133524359294, guid: acc0b4c2614332d45a049a1a84b774f0,
         type: 3}
       propertyPath: m_Material
@@ -220,6 +225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292656677729602840, guid: b991c73fcd496da4aa264577d682ea65,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 2258517611799156210, guid: b991c73fcd496da4aa264577d682ea65,
         type: 3}
@@ -300,6 +310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151499521538636552, guid: 1974f26c65b06c445bf92e4ec82fb164,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 3347974009362411316, guid: 1974f26c65b06c445bf92e4ec82fb164,
         type: 3}
@@ -482,6 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 268815818}
   - component: {fileID: 268815819}
+  - component: {fileID: 268815820}
   m_Layer: 3
   m_Name: HoleLeftTop
   m_TagString: Untagged
@@ -496,13 +512,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268815817}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.65, y: 0, z: 5.68}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.6500006, y: 0, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 11
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &268815819
 SphereCollider:
@@ -517,6 +533,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &268815820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268815817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!1 &269587762
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +687,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2498314884079891152, guid: 4607f7e11c9c75746bf7dbc150cc4ca7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4607f7e11c9c75746bf7dbc150cc4ca7, type: 3}
 --- !u!1 &652093622
@@ -779,6 +813,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7557287238642474377, guid: 75f5197d47b209943b7348e8cc952898,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     - target: {fileID: 7818618607900652782, guid: 75f5197d47b209943b7348e8cc952898,
         type: 3}
       propertyPath: m_RootOrder
@@ -836,6 +875,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75f5197d47b209943b7348e8cc952898, type: 3}
+--- !u!1 &760650071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760650072}
+  m_Layer: 0
+  m_Name: RespawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760650072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760650071}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.873004, y: 5.7281394, z: -1.3211466}
+  m_LocalScale: {x: 0.28586414, y: 0.28586414, z: 0.28586414}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1882922513}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772709913
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,12 +987,7 @@ Transform:
   - {fileID: 1583917198}
   - {fileID: 1307942251}
   - {fileID: 96013188}
-  - {fileID: 1137325964}
-  - {fileID: 2125212646}
-  - {fileID: 1876516785}
-  - {fileID: 268815818}
-  - {fileID: 2077802596}
-  - {fileID: 1506350500}
+  - {fileID: 1537387659}
   m_Father: {fileID: 1703278254}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1066,6 +1131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 621213878507220878, guid: 0008ff5e1c31ac84089c5aa7a2c52fa1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0008ff5e1c31ac84089c5aa7a2c52fa1, type: 3}
@@ -1384,6 +1454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137325964}
   - component: {fileID: 1137325965}
+  - component: {fileID: 1137325966}
   m_Layer: 3
   m_Name: HoleRiightBottom
   m_TagString: Untagged
@@ -1398,13 +1469,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137325963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.665, y: 0, z: 0.358}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.6650002, y: 0, z: 0.3579998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 8
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1137325965
 SphereCollider:
@@ -1419,6 +1490,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1137325966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137325963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!1001 &1210021997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1441,6 +1525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126642746831817686, guid: 5c99cef0036be094bba20a3ae5c6c62c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 8339764036123959830, guid: 5c99cef0036be094bba20a3ae5c6c62c,
         type: 3}
@@ -1761,6 +1850,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7898521080323053054, guid: f5de393ef42ec2d4fbd10e9e4e0139dd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5de393ef42ec2d4fbd10e9e4e0139dd, type: 3}
 --- !u!1001 &1491094686
@@ -1785,6 +1879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4308850404394199721, guid: 07ea9ac3821987c478e14dac0818c11c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 8398972983131253195, guid: 07ea9ac3821987c478e14dac0818c11c,
         type: 3}
@@ -1853,6 +1952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506350500}
   - component: {fileID: 1506350501}
+  - component: {fileID: 1506350502}
   m_Layer: 3
   m_Name: HoleMidBottom
   m_TagString: Untagged
@@ -1867,13 +1967,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506350499}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.49, y: 0, z: 0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.49, y: 0, z: 0.23000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 13
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1506350501
 SphereCollider:
@@ -1888,6 +1988,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1506350502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506350499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!1001 &1537339653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1966,8 +2079,50 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4147034073146917777, guid: c70fd829a92ff5c45886f9eda39df53e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70fd829a92ff5c45886f9eda39df53e, type: 3}
+--- !u!1 &1537387658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537387659}
+  m_Layer: 0
+  m_Name: Holes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1537387659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537387658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1137325964}
+  - {fileID: 2125212646}
+  - {fileID: 1876516785}
+  - {fileID: 268815818}
+  - {fileID: 2077802596}
+  - {fileID: 1506350500}
+  m_Father: {fileID: 772775333}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1553341299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,6 +2499,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4147034073146917777, guid: c70fd829a92ff5c45886f9eda39df53e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c70fd829a92ff5c45886f9eda39df53e, type: 3}
 --- !u!1001 &1694420570
@@ -2368,6 +2528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685973646664603045, guid: 7a0a60986eba7cc4daa7096df23a68e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 6076298639787408875, guid: 7a0a60986eba7cc4daa7096df23a68e7,
         type: 3}
@@ -2504,6 +2669,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 9103593676137881399, guid: a04c7a7f40d4f484491778e95dc35acb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04c7a7f40d4f484491778e95dc35acb, type: 3}
 --- !u!1 &1703278253
@@ -2617,6 +2787,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8779288891382020815, guid: cad8848d5ff780b498f2e6fd686c1669,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cad8848d5ff780b498f2e6fd686c1669, type: 3}
 --- !u!1 &1876516784
@@ -2629,6 +2804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876516785}
   - component: {fileID: 1876516786}
+  - component: {fileID: 1876516787}
   m_Layer: 3
   m_Name: HoleMidTop
   m_TagString: Untagged
@@ -2643,13 +2819,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876516784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.49, y: 0, z: 5.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 10
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1876516786
 SphereCollider:
@@ -2664,6 +2840,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1876516787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876516784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!1 &1882922512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,7 +2880,8 @@ Transform:
   m_LocalPosition: {x: -0.06699753, y: -5.6607704, z: 0.84114707}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 760650072}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2773,6 +2963,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7446156859215397433, guid: 1e07d07c657b48243a5ef0c81b224c9e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ball
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e07d07c657b48243a5ef0c81b224c9e, type: 3}
 --- !u!1 &1967417837
@@ -2830,6 +3025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2077802596}
   - component: {fileID: 2077802597}
+  - component: {fileID: 2077802598}
   m_Layer: 3
   m_Name: HoleLeftBottom
   m_TagString: Untagged
@@ -2844,13 +3040,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2077802595}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.63, y: 0, z: 0.358}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.63, y: 0, z: 0.3579998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 12
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2077802597
 SphereCollider:
@@ -2865,6 +3061,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2077802598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077802595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!1 &2094922363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,6 +3219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125212646}
   - component: {fileID: 2125212647}
+  - component: {fileID: 2125212648}
   m_Layer: 3
   m_Name: HoleRiightTop
   m_TagString: Untagged
@@ -3024,13 +3234,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125212645}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.665, y: 0, z: 5.68}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.6650002, y: 0, z: 5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 772775333}
-  m_RootOrder: 9
+  m_Father: {fileID: 1537387659}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2125212647
 SphereCollider:
@@ -3045,6 +3255,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2125212648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125212645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b932be7701a0a9d4d90a91be23acb458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 760650072}
 --- !u!4 &2143729318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7818618607900652782, guid: 75f5197d47b209943b7348e8cc952898,
@@ -3106,17 +3329,17 @@ PrefabInstance:
     - target: {fileID: 6147678666233917302, guid: 51c5d20d82c6b6640813089dc90a30be,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.75000006
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 6147678666233917302, guid: 51c5d20d82c6b6640813089dc90a30be,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4326309
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 6147678666233917302, guid: 51c5d20d82c6b6640813089dc90a30be,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.610002
+      value: -4.95
       objectReference: {fileID: 0}
     - target: {fileID: 6147678666233917302, guid: 51c5d20d82c6b6640813089dc90a30be,
         type: 3}
@@ -3152,6 +3375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.171
+      objectReference: {fileID: 0}
+    - target: {fileID: 6147678666233917303, guid: 51c5d20d82c6b6640813089dc90a30be,
+        type: 3}
+      propertyPath: _hitPower
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6147678666233917303, guid: 51c5d20d82c6b6640813089dc90a30be,
         type: 3}
@@ -3196,6 +3424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 7769668927189727964}
   _ballSpeed: 0
+  _minBallSpeed: 0.3
   isMoving: 0
 --- !u!1001 &8367601344814789243
 PrefabInstance:
@@ -3207,6 +3436,11 @@ PrefabInstance:
     - target: {fileID: 2291445659159267489, guid: 6403b016ded06604390b727c34773180,
         type: 3}
       propertyPath: m_Name
+      value: WhiteBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291445659159267489, guid: 6403b016ded06604390b727c34773180,
+        type: 3}
+      propertyPath: m_TagString
       value: WhiteBall
       objectReference: {fileID: 0}
     - target: {fileID: 2997005327101754034, guid: 6403b016ded06604390b727c34773180,
