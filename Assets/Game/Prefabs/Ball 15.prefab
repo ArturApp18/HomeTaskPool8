@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4226946239475244815}
   - component: {fileID: -7282077720491450370}
   - component: {fileID: 9050197629560473952}
+  - component: {fileID: 3720520521961637366}
+  - component: {fileID: 2644348036169265627}
   m_Layer: 0
   m_Name: Ball 15
   m_TagString: Untagged
@@ -114,3 +116,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3720520521961637366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147034073146917777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c738e38636a1e04d8dbbfe6a7788c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 9050197629560473952}
+  _ballSpeed: 0
+  _minBallSpeed: 1
+  isMoving: 0
+--- !u!114 &2644348036169265627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147034073146917777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c738e38636a1e04d8dbbfe6a7788c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 9050197629560473952}
+  _ballSpeed: 0
+  _minBallSpeed: 1
+  isMoving: 0
